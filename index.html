@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quote and innerpeace</title>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h3 class="heading">Quote and innerpeace</h3>
+      </header>
+      <section class="slider__container">
+        <div class="slider">
+          <div class="slide"></div>
+          <div class="nav__arrow"></div>
+          <div class="nav__panigation"></div>
+        </div>
+        <div class="slide-list"></div>
+      </section>
+    </div>
+    <!-- Add Quote -->
+    <section class="add-quote__container">
+      <form class="add-quote">
+        <h1 class="add-quote__heading">Add more quote</h1>
+        <div class="add-quote__form">
+          <div class="input-field">
+            <input
+              type="text"
+              name="Author"
+              placeholder="Author"
+              id="author-name"
+              required
+            />
+            <span class="author-name__msg"></span>
+            <textarea
+              name="Quote"
+              id="quote"
+              cols="30"
+              rows="5"
+              placeholder="Quote"
+              required
+            ></textarea>
+            <span class="quote__msg"></span>
+            <input
+              type="number"
+              name="author-age"
+              placeholder="Age's Author"
+              id="author-age"
+              max="100"
+              min="1"
+              required
+            />
+            <span class="author-age__msg"></span>
+            <label class="img-file-label" for="img-file">Add file</label>
+            <input
+              type="file"
+              name=""
+              id="img-file"
+              accept="image/jpeg, image/png, image/jpg"
+              required
+            />
+          </div>
+
+          <img src="./assets/img/slide1.png" alt="" class="preview-img" />
+        </div>
+        <button class="submit-form">Add</button>
+      </form>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
